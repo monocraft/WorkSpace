@@ -138,7 +138,7 @@ Inspection Vendor
 Grass Cut Vendor
 Speciality Vendor
 
-
+```sh
 UPDATE Employees Table
 Implement photo upload for employees
 SET foreign_key_checks = 0;
@@ -167,14 +167,14 @@ CREATE TABLE `Employees` (
    FOREIGN KEY (`ReportsTo`) REFERENCES `Employees` (`EmployeeID`)
 );
 SET foreign_key_checks = 1;
-
+```
 
 Revamp layout for form consistency
 All layout incorporate with theme
 Session privacy added
 
 
-12/27/2014
+### 12/27/2014
 Revamp login interface and main index
 Add vendor belong to user under employees
 Forms added
