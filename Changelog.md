@@ -1,4 +1,5 @@
 Note of changes:
+=========
 c/p table renames to vtype
 index heading renames Type to VendorType
 OLD	ID	VendorType
