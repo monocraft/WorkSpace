@@ -2,6 +2,7 @@ Note of changes:
 =========
 c/p table renames to vtype
 index heading renames Type to VendorType
+```sh
 OLD	ID	VendorType
 9	1	Active Vendor
 10	2	Banished Vendor
@@ -22,7 +23,7 @@ OLD	ID	VendorType
 26	17	Vendor on Leave
 21	18	Vendor Quit
 20	19	Deleted Vendor
-
+```
 vendor application renames to vendor
 index repaired and organized
 Rename: Legal Business Name > Company Name
@@ -92,10 +93,11 @@ salt/password all users completed.  Algorism for add/update/change password func
 
 Permission base content implemented.
 Developers 	- Debug Content/Full Access
-Management 	- Full Access Vendors and Employees (Create/Read/Update/Delete)		:2 Test Management	ID: tmana	PWD: 123
-Administration 	- Full Access Vendors (Create/Read/Update/Delete)			:3 Test Administration	ID: tadmin	PWD: 123
-Recruitment 	- Limited Access Vendors (Create/Read/Update)				:4 Test Recruitment	ID: trec	PWD: 123
-Employees 	- Limited Access Vendors (Read Only)					:5 Test Employee	ID: temp	PWD: 123
+Management 	- Full Access Vendors and Employees (Create/Read/Update/Delete)
+Administration 	- Full Access Vendors (Create/Read/Update/Delete)
+Recruitment 	- Limited Access Vendors (Create/Read/Update)
+Employees 	- Limited Access Vendors (Read Only)
+
 
 Added quick way to turn on/off active for employees.
  
@@ -271,8 +273,9 @@ BC_CertNum
 BC_ExpDate (date)
 
 
-12/29/2014
+### 12/29/2014
 Changes:
+```sh
 vendor > tblVendors
 vstate > tblStates
 vperm > tblRoles
@@ -281,11 +284,11 @@ vtype > tblVenStatus
 -ID > StatusID
 -VendorType > VendorStatus
 Employees > tblEmployees
-
+```
 Update frontend to new employees table
 Update Recruit/Active/Banish to new table
 
-
+```sh
 [tblVenInfo]
 VendorID
 OI_BClass
@@ -343,27 +346,28 @@ BC_Agency
 BC_CertNum
 BC_ExpDate (date)
 LastUpdated
+```
 
-12/30/2014
-Redo Github Commit - Repush all main files.
-
-
-
-Plan and todo:
-Database Reindexing:
-Recruitment log (2/4 Completion)
-Vendor Requests (3/4 Completion)
-Vendor Application (3/4 Completion)
-Recruiment Number (4/4 Completion)
-Employees (4/4 Completion)
-
-Forms validation and link to backend for testing. (3 forms submission/change/request)
-Frontend vendor view forms
-Implement change approval by user before take effect.
-Implement tracking of past changes.
-Implement counties autofill
+### 12/30/2014
+- Redo Github Commit - Repush all main files.
 
 
 
-Global mapping of vendors
-QC for vendors (Development)
+### Plan and todo:
+- Database Reindexing:
+- Recruitment log (2/4 Completion)
+- Vendor Requests (3/4 Completion)
+- Vendor Application (3/4 Completion)
+- Recruiment Number (4/4 Completion)
+- Employees (4/4 Completion)
+
+- Forms validation and link to backend for testing. (3 forms submission/change/request)
+- Frontend vendor view forms
+- Implement change approval by user before take effect.
+- Implement tracking of past changes.
+- Implement counties autofill
+
+
+
+- Global mapping of vendors
+- QC for vendors (Development)
